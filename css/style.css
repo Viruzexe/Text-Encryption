@@ -445,7 +445,7 @@ h1 {
 /* Estilos para pantallas de hasta 600px de ancho */
 @media (max-width: 600px) {
   .alura{
-    width: 100%; /* El ancho de la imagen ocupa el 100% del contenedor */
+    width: 10%; /* El ancho de la imagen ocupa el 100% del contenedor */
     height: auto; /* Altura se ajusta al ancho automáticamente */
   }
   
@@ -456,11 +456,11 @@ h1 {
 
 /* Estilos para pantallas de 601px a 900px de ancho */
 @media (min-width: 601px) and (max-width: 900px) {
-  .alura{\n    width: 70%; /* El ancho de la imagen ocupa el 70% del contenedor */
+  .alura{\n    width: 0.5%; /* El ancho de la imagen ocupa el 70% del contenedor */
   }
   
   h1 {
-    width: 50%; /* El width se ajusta al 50% del contenedor */
+    width: 58%; /* El width se ajusta al 50% del contenedor */
   }
 }
 
@@ -471,14 +471,14 @@ h1 {
   }
   
   h1 {
-    width: 25ch; /* Ancho fijo para el h1 */
+    width: 20ch; /* Ancho fijo para el h1 */
   }
 }
 
 @media only screen and (min-width: 768px) {
   /* para dispositivos con un ancho de pantalla mínimo de 768px */
   .text2{
-    margin-left: 20%;
+    margin-left: 10%;
   }
 }
 
