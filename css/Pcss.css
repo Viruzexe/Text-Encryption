@@ -100,4 +100,13 @@ body {
       text-decoration: none; / remove underline here */
 }
 
+@media (max-width: 600px) {
+  .titulo{
+    
+    width: 100%; /* El ancho de la imagen ocupa el 100% del contenedor */
+    height: auto; /* Altura se ajusta al ancho automáticamente */
+    font-size: 20px;
+  }
+}
+
 
