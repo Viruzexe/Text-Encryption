@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Texto que aprece en fadedIn */
+#texto {
+  display: none;
+  text-align: center;
+  font-weight: bold;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 1;
+  /* Agrega un nivel de profundidad superior que el que tiene canvas */
+  animation: fadeIn 3s;
+  /* Animaciónde 5 segundos*/
+}
+
+
+a{
+  display: none;
+  text-align: center;
+  font-weight: bold;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 1;
+  /* Agrega un nivel de profundidad superior que el que tiene canvas */
+  animation: fadeIn 5s;
+  /* Animaciónde 5 segundos*/
+}
+
+#texto2 {
+  display: none;
+  text-align: center;
+  font-weight: bold;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 1;
+  /* Agrega un nivel de profundidad superior que el que tiene canvas */
+  animation: fadeIn 5s;
+  /* Animaciónde 5 segundos*/
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 0.5;
+  }
+
+  /* Solo carga hasta el 50% */
+}
+
+/* Canvas en el que se dibuja el fondo */
+#canvas {
+  position: absolute;
+  z-index: 0;
+  /* Agrega un nivel de profundidad inferior que el que tiene el texto */
+}
+
+/* Posición emojis esquineros */
+.emoji1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 19;
+  opacity: 0.3;
+}
+
+.emoji2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 19;
+  opacity: 0.3;
+}
+
+.emoji3 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 19;
+  opacity: 0.3;
+}
+
+.emoji4 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 19;
+  opacity: 0.3;
+}
+
+/*Título*/
+.titulo {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  font: normal 62px / normal "Sans-Serif", Helvetica, Comic Sans MS;
+  color: rgb(14, 165, 0);
+  text-decoration: none;
+  white-space: pre;
+  text-shadow: 0 0 10px rgb(0, 94, 23), 0 0 20px rgba(0, 94, 23),
+      0 0 30px rgba(0, 94, 23), 0 0 40px #011d00, 0 0 70px #011d00,
+      0 0 80px #011d00, 0 0 100px #001d05;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  width: 100%;
+}
+
+#a{
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  font: normal 62px / normal "Sans-Serif", Helvetica, Comic Sans MS;
+  color: rgb(14, 165, 0);
+  text-decoration: none;
+  white-space: pre;
+  text-shadow: 0 0 10px rgb(0, 94, 23), 0 0 20px rgba(0, 94, 23),
+      0 0 30px rgba(0, 94, 23), 0 0 40px #011d00, 0 0 70px #011d00,
+      0 0 80px #011d00, 0 0 100px #001d05;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  width: 100%;
+}
+
+#resumen {
+  position: relative;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  font: normal 62px / normal "Sans-Serif", Helvetica, Comic Sans MS;
+  color: rgb(14, 165, 0);
+  text-decoration: none;
+  white-space: pre;
+  text-shadow: 0 0 10px rgb(0, 94, 23), 0 0 20px rgba(0, 94, 23),
+      0 0 30px rgba(0, 94, 23), 0 0 40px #011d00, 0 0 70px #011d00,
+      0 0 80px #011d00, 0 0 100px #001d05;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  width: 100%;
+}
+
+#enlace {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  font: normal 62px / normal "Sans-Serif", Helvetica, Comic Sans MS;
+  color: rgb(14, 165, 0);
+  text-decoration: none;
+  white-space: pre;
+  text-shadow: 0 0 10px rgb(0, 94, 23), 0 0 20px rgba(0, 94, 23),
+      0 0 30px rgba(0, 94, 23), 0 0 40px #011d00, 0 0 70px #011d00,
+      0 0 80px #011d00, 0 0 100px #001d05;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  width: 100%;
+}
+
+.titulo:hover {
+  text-shadow: 0 0 10px rgb(0, 34, 7), 0 0 20px rgba(0, 34, 7),
+      0 0 30px rgba(0, 34, 7), 0 0 40px #000000, 0 0 70px #000000,
+      0 0 80px #000000, 0 0 100px #000000;
+}
+
+.titulo2 {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  font: normal 62px / normal "Sans-Serif", Helvetica, Comic Sans MS;
+  color: rgb(14, 165, 0);
+  text-decoration: none;
+  white-space: pre;
+  text-shadow: 0 0 10px rgb(0, 94, 23), 0 0 20px rgba(0, 94, 23),
+      0 0 30px rgba(0, 94, 23), 0 0 40px #011d00, 0 0 70px #011d00,
+      0 0 80px #011d00, 0 0 100px #001d05;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  width: 100%;
+}
+
+.titulo2:hover {
+  text-shadow: 0 0 10px rgb(0, 34, 7), 0 0 20px rgba(0, 34, 7),
+      0 0 30px rgba(0, 34, 7), 0 0 40px #000000, 0 0 70px #000000,
+      0 0 80px #000000, 0 0 100px #000000;
+}

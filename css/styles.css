@@ -1,0 +1,38 @@
+footer{
+    background-color: #000000;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+  footer .redes1{
+    margin-bottom: 20px;
+  }
+  footer .redes1 a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid rgb(255, 115, 0);
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 20px 5px;
+    font-size: 20px;
+    transition: .3s;
+  }
+  footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #73ff00;
+    color: rgb(36, 3, 3);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+  }

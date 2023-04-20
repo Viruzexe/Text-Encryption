@@ -1,0 +1,444 @@
+html{
+    box-sizing: border-box;
+    background-color: #000000;
+    background-size: 200%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.712)), url(https://virtualbackgrounds.site/wp-content/uploads/2020/08/the-matrix-digital-rain-1024x576.jpg);
+    transition: background-position 1s;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  canvas{
+    z-index: 0;
+  }
+  
+  
+  .header{
+    color: rgb(14, 122, 0);
+    align-items: center;
+    margin: 2% 0 2% 6%;
+  }
+  
+  .alura{
+    vertical-align: middle;
+    width: 96px;
+    filter: invert(100);
+  }
+    
+  h1 {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 25ch;
+    animation: typing 3s steps(8), blink .5s infinite step-end alternate;
+    overflow: hidden;
+  }
+
+.text2{
+    margin-left: 366px;
+    padding: 14px;
+    position: left;
+}
+
+
+
+  .imagen-b{
+    filter: blur(6px);
+    filter: brightness(30%);
+    object-fit: contain;
+    width: 100%;
+    height: 60%;
+    border: 0;
+  }
+  
+  .principal{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+  }
+  
+  .article-uno{
+    width: 60%;
+    text-align: center;
+  }
+  
+  .article-dos,.article-tres{
+    width: 40%;
+    text-align: center;
+  }
+  
+  .article-tres{
+    display: none;
+  }
+  
+  .label{
+    margin-left: 45px;
+    color: #e2e2e0;
+    font-size: 1rem;
+    display: block;
+    padding: .9%;
+  }
+  
+  .parrafo, .mensaje-info{
+    text-align: center;
+    color: #e2e2e0;
+    padding: 2px
+  }
+  
+  .textarea-original, .textarea-modificada{
+    width: 80%;
+    height: 350px;
+    resize: none;
+    font-size: 20px;
+    border-radius: 12px;
+    border: 0;
+    padding: 10px;
+  }
+  
+  .textarea-original{
+    background-color: #14141400;
+    color: #e2e2e0;
+  }
+  
+  .textarea-original::placeholder{
+    color: #07971f;
+  }
+  
+  .textarea-modificada{
+    background-color: #14141465;
+  }
+  
+  .boton{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 58px;
+    font-size: 1rem;
+    width: 20%;
+    height: 6vh;
+    background-color: #023304;
+    color: rgb(238, 243, 243);
+    border: 2px solid #1a2e35;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  
+  .copiar {
+    width: 80%;
+    margin: 5px auto;
+    display: block;
+  }
+  
+  .boton:hover{
+    background-color: #06a51c;
+    border: 2px solid #018673;
+    
+  }
+  
+  .notificacion {
+    width: 24%;
+    height: 10%;
+    font-size: smaller;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    right: 4%;
+    background-color: #171e20;
+    color: rgb(238, 243, 243);
+    padding: 14px 10px 10px 10px;
+    border: 2px solid #018673;
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .notificacion.show {
+    opacity: 1;
+  }
+  
+  .notificacion .cerrar {
+    position: fixed;
+    top: 1.8rem;
+    right: 5%;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: #1a1d1f;
+    color: #ffffff;
+    border: 2px solid #018673;
+    border-radius: 25%;
+    font-size: .8rem;
+    font-weight: 600;
+    line-height: 1.3rem;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .notificacion .texto {
+    padding-right: 2rem;
+    margin-left: 2rem;
+  }
+  
+  .notificacion .cerrar:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .close-button {
+    z-index: 1;
+  }
+  
+  .notificacion progress {
+    /* Le damos un ancho del 100% del contenedor */
+    width: 100%;
+    height: 10px;
+    /* Le quitamos el borde por defecto */
+    border: none;
+    /* Le damos un color de fondo gris claro */
+    background-color: #d3d3d3;
+  }
+  
+  /* Seleccionamos la parte interna de la barra de progreso */
+  .notificacion progress::-webkit-progress-value {
+    /* Le damos un color verde */
+    background-color: #018673;
+  }
+  
+  /* Seleccionamos la parte externa de la barra de progreso */
+  .notificacion progress::-webkit-progress-bar {
+    /* Le damos un color gris oscuro */
+    background-color: #1a2e35;
+  }
+  
+  @media (max-width: 950px) and (orientation: portrait){
+    .principal{
+      display: block;
+      width: 100%;
+    }
+  
+    .header{
+      margin: 4% 0 4% 10%;
+    }
+    
+    .article-uno{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    
+    .article-dos,.article-tres{
+      width: 100%;
+      text-align: center;
+    }
+    
+    .article-tres{
+      display: none;
+    }
+  
+    .textarea-original, .textarea-modificada{
+      width: 80%;
+      height: 250px;
+    }
+  
+    .boton{
+      text-align: center;
+      font-size: 1rem;
+      width: 40%;
+      height: 6vh;
+    }
+  
+    .imagen-b{
+      width: 40%;
+    }
+  
+    .notificacion {
+      position: fixed;
+      top: 0rem;
+      right: 0rem;
+      text-align: center;
+      width: 40%;
+      height: 6%;
+      font-size: 0.8rem;
+    }
+  
+    .notificacion .cerrar {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) and (orientation: portrait){
+    .header{
+      margin: 14% 0 4% 10%;
+    }
+    
+    .label{
+      font-size: smaller;
+    }
+  
+    .article-uno{
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    
+    .article-dos,.article-tres{
+      width: 100%;
+    }
+  
+    .textarea-original, .textarea-modificada{
+      width: 80%;
+      height: 150px;
+      font-size: small;
+    }
+  
+    .textarea-original, .textarea-modificada::placeholder{
+      font-size: small;
+    }
+  
+    .boton{
+      text-align: center;
+      font-size: 0.8rem;
+      width: 40%;
+      height: 6vh;
+    }
+  
+    .mensaje-info{
+      font-size: 1rem;
+    }
+  
+    .parrafo{
+      font-size: 0.8rem;
+    }
+  
+    .imagen-b{
+      width: 40%;
+    }
+  
+    .notificacion {
+      position: fixed;
+      top: 0rem;
+      right: 0rem;
+      text-align: center;
+      width: 40%;
+      height: 7%;
+      font-size: 0.6rem;
+    }
+  
+    .notificacion .cerrar {
+      display: none;
+    }
+  
+    .notificacion progress {
+      display: none;
+    }
+  }
+  
+  @media (max-height: 480px) and (orientation: landscape){
+  
+    .article-uno{
+      width: 50%;
+      text-align: center;
+    }
+    
+    .article-dos,.article-tres{
+      width: 50%;
+      text-align: center;
+    }
+  
+    .textarea-original, .textarea-modificada{
+      height: 80px;
+      font-size: 0.8rem;
+    }
+  
+    .textarea-original, .textarea-modificada::placeholder{
+      font-size: 0.8rem;
+    }
+  
+    .mensaje-info{
+      font-size: 0.8rem;
+    }
+  
+    .parrafo{
+      font-size: 0.7rem;
+    }
+  
+    .label{
+      font-size: 0.8rem;
+    }
+  
+    .imagen-b{
+      width: 50%;
+    }
+  
+    .boton{
+      text-align: center;
+      font-size: 1rem;
+      width: 40%;
+      height: 8vh;
+    }
+  
+    .notificacion progress {
+      display: none;
+    }
+  
+    .notificacion {
+      position: fixed;
+      top: 0rem;
+      right: 0rem;
+      text-align: center;
+      width: 40%;
+      height: 10%;
+      font-size: 0.8rem;
+    }
+  
+    .notificacion .cerrar {
+      display: none;
+    }
+    
+  }
+  
+  .bg {
+    z-index: 3;
+    position: inherit;
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+    background-repeat: repeat;
+    animation: bg-animation .2s infinite;
+    opacity: .9;
+    visibility: visible;
+  }
+  
+  @keyframes bg-animation {
+      0% { transform: translate(0,0) }
+      10% { transform: translate(-5%,-5%) }
+      20% { transform: translate(-10%,5%) }
+      30% { transform: translate(5%,-10%) }
+      40% { transform: translate(-5%,15%) }
+      50% { transform: translate(-10%,5%) }
+      60% { transform: translate(15%,0) }
+      70% { transform: translate(0,10%) }
+      80% { transform: translate(-15%,0) }
+      90% { transform: translate(10%,5%) }
+      100% { transform: translate(5%,0) }
+  }
+
+  @keyframes typing{
+    from { width: 0 }
+  }
+
+  @keyframes blink {
+     50% { border-color: transparent }
+  }

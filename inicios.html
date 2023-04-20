@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Viruzexe">
+    <link rel="shortcut icon" href="./Img/984465.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>Le<>n - Encryption </title>
+
+</head>
+
+<header class="header">
+    <h1><img src="./Img/Icon.png" class="alura"> Encryption by <a href="http://www.davidleon.ml/?i=1"> Le<>n </a> </h1>
+    <article id="contadorPalabras" class="text2"> Cuantas Monedas tienes por haber Minado: 0 </article>
+</header>
+<body>
+    <section class="principal">
+        <article class="article-uno">
+            <form onreset="mostrarOcultarDivs()">
+                <textarea class="textarea-original" placeholder="Ingrese el texto que deseas encriptar aquí" name="texto" minlength="1" autofocus  id="textoOriginal" oninput="mostrarOcultarDivs()"></textarea>
+                <br>
+                <label class="label" for="encriptar"> ® Solo se puede encriptar letras minúsculas y sin acento</label>
+                <input class="boton" type="button" value="Encriptar" id="encriptar" name="Encriptar" onclick="procesar()">
+                <input class="boton" type="button" value="Desencriptar" id="desencriptar" name="Desencriptar" onclick="procesarDesencriptar()">
+
+
+            </form>
+            
+        </article>
+        <article class="article-dos" id="pasivo">
+            <img src="./Img/Tryding.png" class="imagen-b">
+            <h3 class="mensaje-info">Sin mensaje aún</h3>
+            <p class="parrafo">Ingresa el texto que desees encriptar o desencriptar</p>
+        </article>
+        <article class="article-tres" id="activo">
+            <form>
+                <textarea class="textarea-modificada" disabled id="textoEncriptado"></textarea>
+                <br>
+                <label class="label" for="copiar">Usa el boton para copiar tu texto</label>
+                <input class="boton copiar" type="button" name="copiar" value="copiar" id="copiar" onclick="procesarBotonCopiar()">
+            </form>
+        </article>
+        <div class="notificacion" id="notificacion">
+            <span class="mensaje"></span>
+            <button class="cerrar" id="cerrar">X</button>
+            <br><progress></progress>
+        </div>
+    </section>
+<script src="main.js"></script>
+<script src="matrix.js"></script>
+</body>
+</html>     

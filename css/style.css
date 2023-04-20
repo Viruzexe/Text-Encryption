@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.h1{
+  font-size: 30px;
+  text-shadow: 1200px;
+  font-family: 'Lobster', cursive;
+  padding: 10px;
+  text-align: center;
+  background-image: linear-gradient(to right, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+  background-size: 500%;
+  overflow: hidden;
+  animation: fanimado 15s infinite;
+}
+
+.h2{
+  font-size: 15px;
+  text-shadow: 1200px;
+  font-family: 'Arvo', serif;
+  padding: 1px;
+  text-align: center;
+  background-image: linear-gradient(to right, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+  background-size: 500%;
+  overflow: hidden;
+  animation: fanimado 15s infinite;
+}
+.container {
+    display: flex;
+    max-width: 100vw;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background: #000; */
+    background-image: linear-gradient(to right, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+    background-size: 500%;
+    overflow: hidden;
+    animation: fanimado 15s infinite;
+}
+
+img {
+    width: 435px;
+    height: 370px;
+    object-fit: fill;
+    object-position: center;
+    padding: 16px;
+    box-shadow: 5px 5px 5px #252A2E;
+}
+footer{
+  background-color: #252A2E;
+  color: #fff;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+footer .redes1{
+  margin-bottom: 20px;
+}
+footer .redes1 a{
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid rgb(255, 115, 0);
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 40px 5px;
+  font-size: 20px;
+  transition: .3s;
+}
+footer .arriba{
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #73ff00;
+  color: rgb(36, 3, 3);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25px;
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 18px;
+}
+img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transform: scale(1.05); 
+    transform: rotate(-1.2deg) scale(1.05);
+    transition: 0.6s ease-out;
+    filter: grayscale(0.9);
+}
+
+@keyframes fanimado{
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 30%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+  }
+
+  /*---------------------------------------------------------------------------Burbujas----------------------------------------------------------------------------------------------*/
+#btn-mas{
+    z-index: 1;
+    display: none;
+}
+
+.burbujas{
+    z-index: 1;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.redes a, .icon-mas2{
+    z-index: 1;
+    display: block;
+    text-decoration: none;
+    background: #07242b;
+    color: #ffffff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    transition: all 500ms ease;
+}
+
+.redes a:hover{
+    z-index: 1;
+    background: #fff;
+    color: #07242b;
+}
+.redes a{
+    z-index: 1;
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-mas:checked~ .redes a{
+    z-index: 1;
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.icon-mas2{
+    z-index: 1;
+    cursor: pointer;
+    background: #07242b;
+    font-size: 23px;
+}
+
+#btn-mas:checked~ .btn-mas .icon-mas2{
+    z-index: 1;
+    transform: rotate(137deg);
+    font-size: 25px;
+}
+
+.p1{
+    text-decoration: none;
+    font-family: 'Work Sans';
+    color: beige;
+}
+
+.p2{
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Work Sans';
+    color: beige;
+}
