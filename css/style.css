@@ -304,6 +304,7 @@ h1 {
   .boton{
     text-align: center;
     font-size: 0.8rem;
+    margin-bottom: 10px;
     width: 40%;
     height: 6vh;
   }
@@ -445,11 +446,12 @@ h1 {
 /* Estilos para pantallas de hasta 600px de ancho */
 @media (max-width: 600px) {
   .alura{
-    width: 10%; /* El ancho de la imagen ocupa el 100% del contenedor */
+    width: .5%; /* El ancho de la imagen ocupa el 100% del contenedor */
     height: auto; /* Altura se ajusta al ancho automáticamente */
   }
   
   h1 {
+    margin-left: -13px;
     width: 100%; /* El width se ajusta al ancho del contenedor */
   }
 }
@@ -475,9 +477,19 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  /* para dispositivos con un ancho de pantalla mínimo de 768px */
+  .text2{
+    
+    margin-left: 10%;
+  }
+}
+
+
 @media only screen and (min-width: 768px) {
   /* para dispositivos con un ancho de pantalla mínimo de 768px */
   .text2{
+    
     margin-left: 10%;
   }
 }
