@@ -79,7 +79,7 @@ let llaves = {
     mostrarNotificacion("Texto desencriptado correctamente");
   }
   
-  //Creamos la funcion procesarBotonCopiar para el boton COPIAR
+  //Creamos la funcion procesar Boton Copiar para el boton COPIAR
   function procesarBotonCopiar() {
     let texto = document.getElementById("textoEncriptado").value.trim();
     if (!texto) {

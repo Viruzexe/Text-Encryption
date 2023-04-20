@@ -1,7 +1,7 @@
 html{
   box-sizing: border-box;
   background-color: #000000;
-  background-size: 200%;
+  background-size: 150%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.712)), url(https://virtualbackgrounds.site/wp-content/uploads/2020/08/the-matrix-digital-rain-1024x576.jpg);
   transition: background-position 1s;
   width: 100%;
@@ -81,8 +81,7 @@ h1 {
 }
 
 .label{
-  margin-left: 10px;
-  color: #e2e2e0;
+  color: #ffffff;
   font-size: 1rem;
   display: block;
   padding: .9%;
@@ -90,7 +89,7 @@ h1 {
 
 .parrafo, .mensaje-info{
   text-align: center;
-  color: #e2e2e0;
+  color: #fdfd00;
   padding: 2px
 }
 
@@ -105,7 +104,7 @@ h1 {
 }
 
 .textarea-original{
-  background-color: #14141400;
+  background-color: #14141411;
   color: #e2e2e0;
 }
 
@@ -114,17 +113,17 @@ h1 {
 }
 
 .textarea-modificada{
-  background-color: #14141465;
+  background-color: #141414b0;
 }
 
 .boton{
   text-align: center;
-  margin-left: 38px;
+  margin-left: 18px;
   font-size: 1rem;
   width: 20%;
   height: 6vh;
   background-color: #023304;
-  color: rgb(238, 243, 243);
+  color: rgb(0, 241, 241);
   border: 2px solid #1a2e35;
   font-size: 16px;
   border-radius: 10px;
@@ -448,12 +447,12 @@ h1 {
 /* Estilos para pantallas de hasta 600px de ancho */
 @media (max-width: 600px) {
   .alura{
-    width: .5%; /* El ancho de la imagen ocupa el 100% del contenedor */
+    width: 0%; /* El ancho de la imagen ocupa el 100% del contenedor */
     height: auto; /* Altura se ajusta al ancho automáticamente */
   }
   
   h1 {
-    margin-left: -13px;
+    margin-left: -30px;
     width: 100%; /* El width se ajusta al ancho del contenedor */
   }
 }
@@ -482,7 +481,6 @@ h1 {
 @media only screen and (max-width: 600px) {
   /* para dispositivos con un ancho de pantalla mínimo de 768px */
   .text2{
-    margin-left: -660px;
     margin-left: 10%;
   }
 }

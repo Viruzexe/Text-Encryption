@@ -82,46 +82,6 @@ body {
   /* Solo carga hasta el 50% */
 }
 
-/* Canvas en el que se dibuja el fondo */
-#canvas {
-  position: absolute;
-  z-index: 0;
-  /* Agrega un nivel de profundidad inferior que el que tiene el texto */
-}
-
-/* Posición emojis esquineros */
-.emoji1 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 19;
-  opacity: 0.3;
-}
-
-.emoji2 {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 19;
-  opacity: 0.3;
-}
-
-.emoji3 {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 19;
-  opacity: 0.3;
-}
-
-.emoji4 {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 19;
-  opacity: 0.3;
-}
-
 /*Título*/
 .titulo {
   text-decoration: none;
